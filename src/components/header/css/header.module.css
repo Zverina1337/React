@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 75px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    padding: 0 200px;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.header__logo{
+    width: 6%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo img{
+    width: 50px;
+}
+.header__logo h1{
+    color: white;
+}
+nav{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    width: 80%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+nav ul li a{
+    color: #949494;
+    text-decoration: none;
+    transition: 400ms;
+}
+nav ul li:hover a{
+    color: white;
+}
+.header__items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+}
+.header__items a{
+    width: 25px;
+    height: 25px;
+    transition: 400ms;
+}
+.header__items a:nth-child(1){
+    background: url('/public/header/items/search.svg') no-repeat center;   
+}
+.header__items a:nth-child(2){
+    background: url('/public/header/items/add-user.svg') no-repeat center;   
+}
+.header__items a:nth-child(3){
+    background: url('/public/header/items/message.svg') no-repeat center;   
+}
+.header__items a:nth-child(4){
+    background: url('/public/header/items/notifications.svg') no-repeat center;   
+}
+.header__items a:hover{
+    transform: translateY(-5px);
+}
+.header__profile{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__profile div{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__profile__content p{
+    color: white;
+}
+.header__profile button{
+    visibility: hidden;
+}
+.header__div__button{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

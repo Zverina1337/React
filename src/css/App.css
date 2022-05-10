@@ -1,0 +1,12 @@
+*{
+    cursor: default;
+}
+main {
+    display: grid;
+    height: 1800px;
+    padding: 2.5% 10% 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
