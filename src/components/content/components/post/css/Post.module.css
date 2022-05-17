@@ -2,8 +2,7 @@
     width: 100%;
     height: 500px;
     background-color: whitesmoke;
-    position: relative;
-    top: 20px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -26,7 +25,7 @@
     align-items: center;
 }
 .container__header h2 span{
-    color: orangered;
+    color: #ff4500;
     margin-left: 5px;
 }
 .container__header div button{
@@ -66,20 +65,30 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 15%;
-    border-bottom: 1px solid gray;
+    height: 12%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .container__info__item{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 30%;
+    height: 100%;
 }
-.container__info__first .container__info__item p:nth-child(2){
+.container__info__item div{
+    text-align: center;
+}
+.container__info__item div div{
+    display: flex;
+    width: 100%;
+}
+.container__info__item div div img{
+    padding-right: 5px;
+}
+.container__info__first .container__info__item h4{
     font-weight: bold;
 }
-.container__info__first .container__info__item p:nth-child(3){
+.container__info__first .container__info__item div p{
     color: gray;
 }
 .container__info__second {
@@ -87,5 +96,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 30%;
+    height: 12%;
+}
+.container__info__second .container__info__item img{
+    padding-right: 10px;
+    cursor: pointer;
+}
+.container__info__second .container__info__item span{
+    padding-left: 5px;
+    font-weight: bold;
+    cursor: pointer;
 }

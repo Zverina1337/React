@@ -27,54 +27,84 @@ function Post (props){
             </div>
             <div className={cl.container__info__first}>
                 <div className={cl.container__info__item}>
-                    <img src="" alt="" />
-                    <p>City</p>
-                    <p>{props.city}</p>
+                    <div>
+                        <div>
+                            <img src="content/post/items/city.svg" alt="" />
+                            <h4>City</h4>
+                        </div>
+                        <p >{props.city}</p>
+                    </div>
                 </div>
                 <div className={cl.container__info__item}>
-                    <img src="" alt="" />
-                    <p>Date</p>
-                    <p>{props.date}</p>
+                    <div>
+                        <div>
+                            <img src="content/post/items/date.svg" alt="" />
+                            <h4>Date</h4> 
+                        </div>
+                        <p>{props.date}</p> 
+                    </div>   
                 </div>
                 <div className={cl.container__info__item}>
-                    <img src="" alt="" />
-                    <p>Time</p>
-                    <p>{props.time}</p>
+                    <div>
+                        <div>
+                            <img src="content/post/items/time.svg" alt="" />
+                            <h4>Time</h4>
+                        </div>
+                        <p>{props.time}</p> 
+                    </div>
+                    
                 </div>
                 <div className={cl.container__info__item}>
-                    <img src="" alt="" />
-                    <p>Weather</p>
-                    <p>{props.weather}</p>
+                    <div>
+                        <div>
+                            <img src="content/post/items/weather.svg" alt="" />
+                            <h4>Weather</h4> 
+                        </div>
+                        <p>{props.weather}</p> 
+                    </div>     
                 </div>
             </div>
             <div className={cl.container__info__first}>
                 <div className={cl.container__info__item}>
-                    <img src="" alt="" />
-                    <p>Going</p>
-                    <p>{props.going}</p>
+                    <div>
+                        <div>
+                            <img src="content/post/items/going.svg" alt="" />
+                            <h4>Going</h4>  
+                        </div>
+                        <p>{props.going}</p>  
+                    </div>
                 </div>
                 <div className={cl.container__info__item}>
-                    <img src="" alt="" />
-                    <p>Maybe</p>
-                    <p>{props.maybe}</p>
+                    <div>
+                        <div>
+                            <img src="content/post/items/maybe.svg" alt="" />
+                            <h4>Maybe</h4> 
+                        </div>
+                        <p>{props.maybe}</p> 
+                    </div>    
                 </div>
                 <div className={cl.container__info__item}>
-                    <img src="" alt="" />
-                    <p>Can`t Go</p>
-                    <p>{props.cantgo}</p>
+                    <div>
+                        <div>
+                          <img src="content/post/items/cantgo.svg" alt="" />
+                            <h4>Can`t Go</h4>  
+                        </div>
+                        <p>{props.cantgo}</p> 
+                    </div>
+                    
                 </div>
             </div>
             <div className={cl.container__info__second}>
                 <div className={cl.container__info__item}>
-                    <img src="" alt="" />
+                    <img src="content/post/items/like.svg" alt="" />
                     <p>Like<span>{props.like}</span></p>
                 </div>
                 <div className={cl.container__info__item}>
-                    <img src="" alt="" />
+                    <img src="content/post/items/comment.svg" alt="" />
                     <p>Comment<span>{props.comment}</span></p>
                 </div>
                 <div className={cl.container__info__item}>
-                    <img src="" alt="" />
+                    <img src="content/post/items/share.svg" alt="" />
                     <p>Share<span>{props.share}</span></p>
                 </div>
             </div>
