@@ -7,10 +7,15 @@ function Post (props){
         <div className={cl.container}>
             <div className={cl.container__header}>
                 <h2>{props.title}</h2>
-                <h2>Ticket price:<span className={cl.container__header__money}>{props.money}</span></h2>
-                <button>...</button>
+                <div>
+                    <h2>Ticket price:<span className={cl.container__header__money}>{props.money}</span></h2>
+                    <button>...</button>
+                </div>
+                
             </div>
-            <div className={cl.container__main}>
+            <div className={cl.container__main} style={{backgroundImage: `url("/content/post/${props.bg}")`,
+                                                        backgroundRepeat: `no-repeat`,backgroundPosition: `center`,
+                                                        backgroundSize: `cover`}}>
                 <div>
                     <Button content="Buy Ticket" clName="orange_button" position="main"/>
                     <Button content="Maybe"/>
@@ -42,8 +47,8 @@ function Post (props){
                     <p>{props.weather}</p>
                 </div>
             </div>
-            <div className={cl.container__info__second}>
-                <div className={cl.container__info__going}>
+            <div className={cl.container__info__first}>
+                <div className={cl.container__info__item}>
                     <img src="" alt="" />
                     <p>Going</p>
                     <p>{props.going}</p>
@@ -59,7 +64,7 @@ function Post (props){
                     <p>{props.cantgo}</p>
                 </div>
             </div>
-            <div className={cl.container__info__third}>
+            <div className={cl.container__info__second}>
                 <div className={cl.container__info__item}>
                     <img src="" alt="" />
                     <p>Like<span>{props.like}</span></p>

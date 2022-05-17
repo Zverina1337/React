@@ -10,7 +10,7 @@ function Categories (){
         return (
         <div className={cl.container}>
             <h1 className={cl.h1}>Categories</h1>
-            {images_src.map((img,index) => <button className={cl.container__div}><p className={cl.p} key={words[index]}>{words[index]}</p><img className={cl.img} key={img} src={img} alt={img}/></button>)}  
+            {images_src.map((img,index) => <button className={cl.container__div} key={index}><p className={cl.p} key={words[index]}>{words[index]}</p><img className={cl.img} key={img} src={img} alt={img}/></button>)}  
         </div>
     );
     
